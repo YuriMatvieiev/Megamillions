@@ -185,12 +185,10 @@
     background-color: #fff;
     box-shadow: 0px 3px 3px 0px rgba(113, 113, 113, 0.14);
     border-radius: 20px;
-    padding: 12px 20px;
+    padding: 20px 30px 20px 20px;
     font-size: rem(16);
     line-height: math.div(22, 16);
-    width: rem(350);
-    @include adaptiveValue("width", 350, 282);
-    padding: 20px;
+    @include adaptiveValue("width", 425, 282);
   }
   // .steps__right
   &__right {
@@ -210,6 +208,8 @@
   background: #0d1d33;
   @include adaptiveValue("padding-top", 74, 31);
   @include adaptiveValue("padding-bottom", 74, 31);
+  position: relative;
+  z-index: 2;
   // .about__container
   &__container {
     display: flex;
@@ -273,9 +273,10 @@
 //========================================================================================================================================================
 
 .next {
-  @include adaptiveValue("padding-top", 44, 37);
-  @include adaptiveValue("padding-bottom", 33, 36);
+  @include adaptiveValue("padding-top", 115, 37);
+  @include adaptiveValue("padding-bottom", 115, 36);
   background-color: #f9f9f9;
+  position: relative;
   // .next__container
   &__container {
     text-align: center;
@@ -297,11 +298,30 @@
     font-size: rem(16);
     line-height: math.div(24, 16);
     color: #f9f9f9;
+    display: inline-block;
     @media (any-hover: hover) {
       &:hover {
         background-color: #f33f5c;
         transition: all 0.3s ease 0s;
       }
     }
+  }
+  &__img-left {
+    position: absolute;
+    bottom: -122px;
+    left: -118px;
+    @include adaptiveValue("bottom", -122, -53);
+    @include adaptiveValue("left", -118, -45);
+    @include adaptiveValue("width", 393, 150);
+    z-index: 1;
+  }
+  &__img-right {
+    position: absolute;
+    top: -135px;
+    right: -228px;
+    @include adaptiveValue("top", -135, -50);
+    @include adaptiveValue("right", -228, -93);
+    @include adaptiveValue("width", 462, 199);
+    z-index: 1;
   }
 }

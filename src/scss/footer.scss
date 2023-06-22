@@ -5,6 +5,8 @@
   padding-top: rem(34);
   padding-bottom: rem(55);
   color: #fff;
+  position: relative;
+  z-index: 2;
   // .footer__container
   &__container {
   }
