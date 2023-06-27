@@ -19,3 +19,24 @@
     background: linear-gradient(0deg, #f22c4d 23.96%, #f67e93 100%);
   }
 }
+.yellow-bg {
+  background: url("@img/yellow-baner.png") center bottom / cover no-repeat;
+  @media (max-width: $mobile) {
+    background: linear-gradient(0deg, #ffd276 23.96%, #ffc54d 100%);
+  }
+  .main__button {
+    background-color: #f22c4d;
+    color: #fff;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: #f33f5c;
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+
+  .main__title,
+  .main__sub-text {
+    color: #0d1d33;
+  }
+}

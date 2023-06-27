@@ -155,6 +155,19 @@ h6 {
 .no-webp .red-bg{
   background: url("../img/baner-red.png") center bottom/cover no-repeat; }
 
+.no-webp .yellow-bg{
+  background: url("../img/yellow-baner.png") center bottom/cover no-repeat; }
+
+.yellow-bg .main__button {
+  background-color: #f22c4d;
+  color: #fff;
+}
+
+.yellow-bg .main__title,
+.yellow-bg .main__sub-text {
+  color: #0d1d33;
+}
+
 /*
 .icon-menu {
 	display: none;
@@ -932,6 +945,11 @@ h6 {
     background: linear-gradient(0deg, #f22c4d 23.96%, #f67e93 100%);
   }
 
+  .yellow-bg {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(23.96%, #ffd276), to(#ffc54d));
+    background: linear-gradient(0deg, #ffd276 23.96%, #ffc54d 100%);
+  }
+
   .footer__top-item {
     width: 100%;
   }
@@ -1139,12 +1157,18 @@ h6 {
 
 @media (max-width: 29.99875em) {
   .steps__title {
-    max-width: 19.375rem;
+    max-width: 18.75rem;
     margin: 0 auto;
   }
 }
 
 @media (any-hover: hover) {
+  .yellow-bg .main__button:hover {
+    background-color: #f33f5c;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
   .footer__bottom-link:hover {
     color: #d48f8f;
     -webkit-transition: all 0.3s ease 0s;
@@ -1167,3 +1191,5 @@ h6 {
 .webp .blue-bg{ background: url(../img/Banner.webp) center bottom/cover no-repeat; }
 
 .webp .red-bg{ background: url(../img/baner-red.webp) center bottom/cover no-repeat; }
+
+.webp .yellow-bg{ background: url(../img/yellow-baner.webp) center bottom/cover no-repeat; }
